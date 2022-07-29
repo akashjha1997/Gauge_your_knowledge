@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 520px;
+margin-top:180px;
+background-image: url("https://images.pexels.com/photos/1365441/pexels-photo-1365441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 310px;
+  margin-bottom: 15px;
+  margin-left:5px;
+  margin-top: 15px
+}
+
+.icon {
+  padding: 10px;
+  background: #808080;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid #808080;
+}
+
+
+.btn {
+
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  width: 310px;
+  opacity: 0.9;
+  margin-left: 5px
+}
+
+.btn:hover {
+color:grey;
+  opacity: 1;
+}
+
+</style>
+
+</head>
+<body style="width:350px;">
+<form action="loginController.jsp"  method="post">
+<fieldset>
+<legend  style="font-family: Arial, Helvetica, sans-serif; font-size:20 px ; color:white; text-align: center;"><b>LOGIN CREDENTIALS</b> </legend>
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+ <br><input   class="input-field"  type="text"    name="email"  placeholder="Enter the registered  email"  required="required"><br>
+</div>
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+<br><input  class="input-field"  type="password"   name="password"   placeholder="Enter your password"  required="required"><br>
+</div>
+
+
+
+<div class="input-container">
+    <i class="fa fa-user icon"></i>
+
+<select name="emptype"   class="input-field" >
+    <option value="A">Admin</option>
+    <option value="U">User</option>
+  
+  </select>
+  </div>
+<input type="submit"  value="SIGN IN"  class="btn">
+
+</fieldset>
+
+
+
+</form>
+
+</body>
+</html>
